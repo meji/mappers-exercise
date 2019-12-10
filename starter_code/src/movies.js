@@ -10,5 +10,5 @@ const orderByYear = (array)=>{
 }
 
 const howManyMovies = (arr, selectedGenre, selectedDirector ) => {
-    return (arr.filter(movie => ((movie.genre===selectedGenre)&&(movie.director ===selectedDirector))).length
+    arr.filter(movie => movie.genre===selectedGenre).filter(movie => movie.director ===selectedDirector).length 
 }
